@@ -53,3 +53,60 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+
+
+//   Part 2: Practical Math
+const tripDistance = 1500;
+const fuelBudget = 175;
+const fuelCostPerGallon = 3;
+
+let speed;
+let efficiency;
+
+// UNCOMMNENT the code sections below to try the calulation at different speed
+
+// if travel at 55 miles per hour
+// speed = 55;
+// efficiency = 30;
+
+// let gallonsNeeded = tripDistance / efficiency;
+// let totalFuelCost = gallonsNeeded * fuelCostPerGallon;
+// let travelTime = tripDistance/speed;
+
+// console.log(`If travel at ${speed}, 
+// you will need ${gallonsNeeded} gallons of fuel, 
+// your cost will be ${totalFuelCost},
+// you will have enough to cover fuel expense: ${totalFuelCost <= fuelBudget},
+// the trip will take ${travelTime} hours.`)
+
+
+// if travel at 60 miles per hour
+// THIS MAKES THE MOST SENSE BECAUSE IT IS WITHIN FUEL BUDGET AND FASTER THAN THE PREVIOUS OPTION. 
+
+speed = 60;
+efficiency = 28;
+
+let gallonsNeeded = tripDistance / efficiency;
+let totalFuelCost = gallonsNeeded * fuelCostPerGallon;
+let travelTime = tripDistance/speed;
+
+console.log(`If travel at ${speed}, 
+you will need ${gallonsNeeded} gallons of fuel, 
+your cost will be ${totalFuelCost},
+you will have enough to cover fuel expense: ${totalFuelCost <= fuelBudget},
+the trip will take ${travelTime} hours.`)
+
+
+//if travel at 75 miles per hour
+// speed = 75;
+// efficiency = 23;
+
+// let gallonsNeeded = tripDistance / efficiency;
+// let totalFuelCost = gallonsNeeded * fuelCostPerGallon;
+// let travelTime = tripDistance/speed;
+
+// console.log(`If travel at ${speed}, 
+// you will need ${gallonsNeeded} gallons of fuel, 
+// your cost will be ${totalFuelCost},
+// you will have enough to cover fuel expense: ${totalFuelCost <= fuelBudget},
+// the trip will take ${travelTime} hours.`)
